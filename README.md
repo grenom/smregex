@@ -1,7 +1,7 @@
 # smregex
 ### s.m.a.r.t monitoring in zabbix with autodiscover
 
-There is the utility for get s.m.a.r.t parameters and inventory (s/n, model, etc.) You must pass smartctl.exe path. 
+There is the utility for get s.m.a.r.t parameters and inventory (s/n, model, etc.) You must pass smartctl.exe path.
 
 If you want to use this utility for monitoring (for example zabbix), conveniently store smregex.exe and smartctl.exe on public share with ro permisions. 
 
@@ -20,4 +20,4 @@ _This repository does't provide smartctl.exe_
 * \\\\share\smreegex.exe -s\\\\share\smartctl.exe -d/dev/sdb -tata -o sn
 * \\\\share\smreegex.exe -s\\\\share\smartctl.exe -d/dev/sdb -tata -i9
 
-
+If you run smreegex.exe and smartctl.exe in windows console I highly recommend you run it from Administrator user. Zabbix agent service already works with administrator access, therefore system.run items will work properly.
